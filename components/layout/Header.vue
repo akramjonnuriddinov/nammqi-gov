@@ -16,7 +16,7 @@ const links = [
 </script>
 
 <template>
-  <header class="bg-gray-500 text-white">
+  <header class="border-b border-gray-200 h-[60px] p-2 flex items-center justify-end">
     <nav>
       <ul class="flex gap-5">
         <li v-for="(link, index) in links" :key="index">
