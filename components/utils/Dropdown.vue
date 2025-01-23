@@ -7,7 +7,7 @@
   
       <div
         v-if="isOpen"
-        :class="`absolute mb-2 w-48 z-30 bg-white border border-gray-200 rounded-md shadow-lg transform transition-all duration-200 right-0 bottom-full ${className}`"
+        :class="`absolute mb-2 flex flex-col z-30 bg-white border border-gray-200 rounded-md shadow-lg transform transition-all top-full w-max duration-200 ${className}`"
       >
         <slot></slot>
       </div>

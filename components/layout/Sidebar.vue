@@ -19,7 +19,8 @@ const links = [
         <div class="text-xl mt-3 px-2">NamMQi Gov</div>
         <nav>
             <ul class="flex flex-col">
-                <NuxtLink v-for="(link, index) in links" :key="index" :to="link.path" class="hover:bg-gray-100 w-full py-1 px-2 rounded-md">
+                <NuxtLink v-for="(link, index) in links" :key="index" :to="link.path"
+                    class="hover:bg-gray-100 w-full py-1 px-2 rounded-md">
                     {{ link.name }}
                 </NuxtLink>
             </ul>
