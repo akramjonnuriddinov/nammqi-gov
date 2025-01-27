@@ -1,103 +1,107 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import "tailwindcss";
 
 @theme {
-    --color-main-100: #edf5ff;
-    --color-main-200: #e5effc;
-    --color-main-400: #5c8eff;
-    --color-main-500: #0068e0;
+  --color-main-100: #edf5ff;
+  --color-main-200: #e5effc;
+  --color-main-400: #5c8eff;
+  --color-main-500: #0068e0;
 }
 
 :root,
 html,
 body {
-    scroll-behavior: smooth;
-    @apply bg-white duration-300;
+  scroll-behavior: smooth;
+  @apply bg-white duration-300;
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
+  width: 5px;
+  height: 5px;
 }
 
 ::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-    @apply rounded-lg;
+  @apply rounded-lg;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .scrolbar-none::-webkit-scrollbar-thumb {
-    background: transparent;
+  background: transparent;
 }
 
 .bg {
-    background-image: linear-gradient(to right, #4f46e5 0%, #00c5fb 50%, #4f46e5 100%);
-    background-size: 200% auto;
-    transition: all 0.5s ease-in-out;
-    color: #fff;
+  background-image: linear-gradient(
+    to right,
+    #4f46e5 0%,
+    #00c5fb 50%,
+    #4f46e5 100%
+  );
+  background-size: 200% auto;
+  transition: all 0.5s ease-in-out;
+  color: #fff;
 }
 
 .bg_liner {
-    background: linear-gradient(to right, #005cea 0%, #00c5fb 50%, #005cea 100%);
+  background: linear-gradient(to right, #005cea 0%, #00c5fb 50%, #005cea 100%);
 }
 
 .text-bg {
-    background: linear-gradient(to right, #005cea 0%, #00c5fb 50%, #005cea 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+  background: linear-gradient(to right, #005cea 0%, #00c5fb 50%, #005cea 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 .bg:hover {
-    background-position: 100% 0;
-    transition: all 0.5s ease-in-out;
+  background-position: 100% 0;
+  transition: all 0.5s ease-in-out;
 }
 
 @layer base {
-    .main-container {
-        @apply mx-auto w-full max-w-[1400px] relative 2xl:px-0 lg:px-10 md:px-4 px-2;
-    }
+  .main-container {
+    @apply mx-auto w-full max-w-[1400px] relative 2xl:px-0 lg:px-10 md:px-4 px-2;
+  }
 
-    label {
-        @apply flex flex-col;
-    }
+  label {
+    @apply flex flex-col;
+  }
 
-
-    input,
-    select {
-        @apply bg-transparent border border-main-500 p-1 placeholder:text-sm placeholder:font-normal w-full rounded-md py-2 outline-0;
-    }
+  input,
+  select {
+    @apply bg-transparent border border-main-500 p-1 placeholder:text-sm placeholder:font-normal w-full rounded-md py-2 outline-0;
+  }
 }
 
 * {
-    font-family: 'Montserrat', sans-serif !important;
-    box-sizing: border-box;
-    animation: appear 0.4s ease-out;
+  font-family: "Montserrat", sans-serif !important;
+  box-sizing: border-box;
+  animation: appear 0.4s ease-out;
 }
 
 @keyframes appear {
-    0% {
-        opacity: 0;
-    }
+  0% {
+    opacity: 0;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
